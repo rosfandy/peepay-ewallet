@@ -22,7 +22,7 @@ Milestone 2 :
 2. Transfer
 3. Pulsa
 
-https://peepay-v2.herokuapp.com/
+https://peepaywallet.herokuapp.com/
 
 ## Documentation API
 
@@ -35,7 +35,7 @@ require `authorization`
 Get user database
 
 ### POST Method
-#### POST `/login`
+#### POST `api/login`
 
 Login to get accesToken. Require body parser :
 ```
@@ -44,26 +44,23 @@ Login to get accesToken. Require body parser :
     "password": "dummy321"
 }
 ```
-#### POST `/register`
+#### POST `api/profile`
 
 Allows user to register account to database. Require body parser :
 
 ```
 {
-    "name" : "dummy",
     "username" : "dummy",
-    "phone" : "081234567890",
     "email" : "dummy@mail.com",
     "password": "dummy321"
 }
 ```
-#### POST `/topup`
+#### POST `api/topup`
 require `authorization`
 
 Allows user to topup account balance. Require body parser :
 ```
 {
-    "phone" : "081232681465",
     "amount" : 12000
 }
 ```
