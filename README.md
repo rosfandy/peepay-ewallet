@@ -62,7 +62,7 @@ require `authorization`
 Allows user to topup account balance. Require body parser :
 ```
 {
-    "amount" : 12000
+    "jumlah" : 12000
 }
 ```
 #### 
