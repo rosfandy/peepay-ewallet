@@ -29,11 +29,11 @@ https://peepaywallet.herokuapp.com/
 
 ### GET Method
 
-#### GET `/users`
+#### GET `api/profile`
 
 require `authorization`
 
-Get user database
+Get user profile
 
 ### POST Method
 #### POST `api/login`
