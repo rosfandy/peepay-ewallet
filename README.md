@@ -18,9 +18,10 @@ Milestone 1 :
 Frontend Home, Login, Register
 
 Milestone 2 :
-1. Payment
-2. Transfer
-3. Pulsa
+1. Payment (pending)
+
+Milestone 3 :
+Integrasi API ke frontend (pending)
 
 https://peepaywallet.herokuapp.com/
 
