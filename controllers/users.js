@@ -2,7 +2,7 @@ const modelUser = require('../models/user')
 const { Sequelize, Model, DataTypes } = require("sequelize");
 const sequelize = new Sequelize("sqlite::memory:");
 const User = modelUser.userModel
-const bcrypt = require('bcrypt')
+// const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const jwt_decode = require('jwt-decode')
 
@@ -40,8 +40,8 @@ exports.register = function(req,res){
             var email     = post.email;
             var password  = post.password;
 
-            const salt    = await bcrypt.genSalt()
-            const hashPassword = await bcrypt.hash(password, salt)
+            // const salt    = await bcrypt.genSalt()
+            // const hashPassword = await bcrypt.hash(password, salt)
             
             if (Object.keys(email).length === 0 || Object.keys(username).length === 0 || Object.keys(password).length === 0) {
                 const status =({
@@ -55,7 +55,7 @@ exports.register = function(req,res){
             const newUser = await User.create({ 
                 username: username,
                 email: email,
-                password: hashPassword
+                password: password
             });
             const status =({
                 message: "Register successfully !!",
@@ -94,8 +94,7 @@ exports.login = function(req,res){
             })
 
             if (user){
-                const match = await bcrypt.compare(password, user.password)
-                if(!match) {
+                if(password != user.password) {
                     res.status(400).send("Wrong password !")
                 } else {
                     const userName = user.name

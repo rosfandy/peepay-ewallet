@@ -2,7 +2,6 @@ const Order = require('../models/order').orderModel
 const User = require('../models/user').userModel
 const { Sequelize, Model, DataTypes } = require("sequelize");
 const sequelize = new Sequelize("sqlite::memory:");
-const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const uuid = require('uuid')
 
