@@ -23,7 +23,7 @@ Milestone 2 :
 Milestone 3 :
 Integrasi API ke frontend (pending)
 
-https://peepaywallet.herokuapp.com/
+https://peepaywallet-v2.herokuapp.com/
 
 ## Documentation API
 
