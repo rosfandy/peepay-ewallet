@@ -111,6 +111,7 @@ Contoh:
 **Body Request**    : - <br>
 ***Authorization*** : Bearer Token  <br>
 
+
 **Server Response** :  <br>
 ***BERHASIL*** :
 ```
@@ -122,15 +123,22 @@ Contoh:
 ```
 
 ### Pembelian
-**Endpoint**        : PUT {{peepay}}api/pembelian <br>
+**Endpoint**        : POST {{peepay}}api/pembelian <br>
 **Body Request**    : email, harga <br>
 ***Authorization*** : Bearer Token  <br>
+Contoh:
+```
+{
+    "email" : "uhuy1@gmail.com",
+    "harga" : "1000"
+}
+```
 
 **Server Response** :  <br>
 ***BERHASIL*** : 
 ```
 {
-    "email" : "uhuy1@gmail.com",
-    "harga" : "1000"
+    "message": "Payment success !",
+    "status": 200
 }
 ```
