@@ -9,6 +9,11 @@ E-wallet RestAPI using NodeJS, Express, MySQL
 
 ## Dokumentasi API
 
+### Kelompok 9
+5027201042 - Ilham Muhammad Sakti <br>
+5207201043 - Bagus Ridho R <br>
+5027201057 - Muhammad Farrel Abdillah <br>
+
 {{peepay}} = https://peepaywallet-v2.herokuapp.com/
 
 ### Dokumentasi
